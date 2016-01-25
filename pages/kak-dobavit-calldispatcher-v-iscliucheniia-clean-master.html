@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+        <meta charset="utf-8" />
+        <title>Как добавить CallDispatcher в исключения Clean Master</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+
+        <!--[if IE]>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">a4vi2r </a></h1>
+                <nav><ul>
+                    <li class="active"><a href="/pages/kak-dobavit-calldispatcher-v-iscliucheniia-clean-master.html">Как добавить CallDispatcher в исключения Clean Master</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+    <h1 class="entry-title">Как добавить CallDispatcher в исключения Clean Master</h1>
+    
+    <p>TEST2 This is the content of my super blog post.</p>
+<p><img alt="Alt Text" src="/images/cleanmaster_1.png" /></p>
+<h2>Проблема</h2>
+<p>При использовании приложения <strong>CallDispatcher</strong> иногда возникает проблема с так называемым &laquo;слётом баз&raquo;,
+когда приложение показывает только страну и не показывает регион и оператора и приходится снова и снова переустанавливать базы.</p>
+<p>Это может происходить из-за того, что на вашем устройстве установлено одно из приложений, которые называют  <em>клинерами</em>, <em>таск-киллерами</em> или <em>оптимизаторами</em>.
+Разработчики подобных приложений позиционируют их как нужные и полезные инструменты, помогающие пользователю оптимизировать работу устройств под управлением <em>ОС Android</em>.
+<p>Тем не менее, из-за несовершенства алгоритмов подобных приложений, многие из них считают папку с базами <strong>CallDispatcher</strong> мусором (кэшем, временными файлами) и могут удалять её при &laquo;очистке&raquo; или &laquo;оптимизации&raquo; памяти.</p>
+<p>
+Такая проблема возникает, например, если на устройстве установлено приложение <strong>Clean Master</strong> от <em>Cheetah Mobile</em> или аналогичное от того же разработчика.
+<strong>Clean Master</strong> удаляет папку с базами <strong>CallDispatcher</strong> и может выгружать из памяти процессы приложения <strong>CallDispatcher</strong>, необходимые для её работы (отображения окон с информацией о вызовах).
+</p>
+<p>
+Чтобы избежать подобных проблем, проще всего никогда не использовать <em>клинеры</em>, <em>таск-киллеры</em> и прочие <em>&laquo;оптимизаторы&raquo;</em>, потому что они скорее вредны, чем полезны.
+Но, если вы всё же по каким-то причинам не можете отказаться от их использования, то существует простое решение этой проблемы, показанное далее на примере настройки приложения <strong>Clean Master</strong>.</p></p>
+<h2>Решение</h2>
+
+<p>Запускаем <strong>Clean Master</strong>.</p>
+<p><img alt="Alt Text" src="/images/cleanmaster_2.png" /></p>
+<li>
+<p>Нажимаем пункт меню <strong>&laquo;Мусор&raquo;</strong>.</p>
+<img src="cleanmaster_2.png" />
+</li>
+
+<li>
+<p><ul>
+<li>Находим группу <strong>&laquo;Ненужный кэш&raquo;</strong>.
+ <li>Если группа не раскрыта, то раскрываем группу нажатием.
+ <li>Пролистываем список группы, находим строку с приложением <strong>Call Dispatcher</strong>.
+ </ul></p>
+<img src="cleanmaster_3.png" />
+</li>
+
+<li>
+<p>Нажимаем на строке и удерживаем.</p>
+<img src="cleanmaster_6.png" />
+</li>
+
+<li>
+<p>В появившемся окне нажимаем кнопку <strong>[Добавить в белый список]</strong>.</p>
+<img src="cleanmaster_7.png" />
+</li>
+
+<li>
+<p><ul>
+<li>Пролистываем список до группы <strong>&laquo;Оптимизация памяти&raquo;</strong>.</li>
+<li>Раскрываем группу нажатием.</li>
+<li>Пролистываем список группы, находим строку с приложением <strong>Call Dispatcher</strong>.</li>
+<li>В этом списке работают два варианта: а) нажимаем на строке и удерживаем или б) просто нажимаем на строке.</li>
+</ul></p>
+<img src="cleanmaster_8.png" />
+</li>
+
+<li>
+<p>В появившемся окне нажимаем <strong>[Добавить в белый список]</strong>.</p>
+<img src="cleanmaster_9.png" /> 
+<img src="cleanmaster_10.png" />
+</li>
+
+</ol>
+
+<h2>Проверка</h2>
+
+<ol>
+<li>
+<p><ul>
+<li>Возвращаемся в главное окно нажатием аппаратной кнопки телефона <strong>[Назад]</strong> или пункта <strong>&lt; Мусор</strong>.</li>
+<li>Переходим на вкладку <strong>[Я]</strong>.</li></ul></p>
+<img src="cleanmaster_1.png" />
+</li>
+
+<li>
+<p>В появившемся списке нажимаем пункт  <strong>&laquo;Настройки&raquo;</strong>. </p>
+<img src="cleanmaster_11.png" />
+</li>
+
+<li>
+<p>Пролистываем до группы <strong>&laquo;Белый список&raquo;</strong>.</p>
+<img src="cleanmaster_12.png" />
+</li>
+
+<li>
+<p>Нажимаем пункт  <strong>&laquo;Мусор&raquo;</strong>.</p>
+<img src="cleanmaster_13.png" />
+</li>
+
+<li>
+<p>Нажимаем пункт  <strong>&laquo;Задачи&raquo;</strong>.</p>
+<img src="cleanmaster_14.png" />
+</li>
+
+</ol>
+
+<h2>Результат</h2>
+
+<p>Теперь приложение <strong>Call Dispatcher</strong> добавлено в исключения <strong>Clean Master</strong>.</p>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>blogroll</h2>
+                        <ul>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
