@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Проблема При использовании приложения CallDispatcher иногда возникает проблема с так называемым «слётом баз», когда приложение показывает только страну и не показывает регион и оператора и ...">
+        <meta name="keywords" content="">
+        <link rel="icon" href="/favicon.ico">
+
+        <title>Как добавить CallDispatcher в исключения Clean Master - a4vi2r</title>
+
+        <!-- Stylesheets -->
+        <link href="/theme/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/theme/css/fonts.css" rel="stylesheet">
+        <link href="/theme/css/nest.css" rel="stylesheet">
+        <link href="/theme/css/pygment.css" rel="stylesheet">
+        <!-- /Stylesheets -->
+
+        <!-- RSS Feeds -->
+        <!-- /RSS Feeds -->
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+    </head>
+
+    <body>
+
+        <!-- Header -->
+    <div class="header-container gradient">
+
+            <!-- Static navbar -->
+            <div class="container">
+                <div class="header-nav">
+                    <div class="header-logo">
+                        <a class="pull-left" href="/"><img class="mr20" src="/images/logo.png" alt="logo">a4vi2r</a>
+                    </div>
+                    <div class="nav pull-right">
+                                <a href="/">About</a>
+                                <a href="/faq/">FAQ</a>
+                                <a href="/todo.html">ToDo</a>
+                                <a href="/changelog.html">changelog</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /Static navbar -->
+
+            <!-- Header -->
+    <!-- Header -->
+    <div class="container header-wrapper">
+        <div class="row">
+              <div class="col-lg-12">
+                  <div class="header-content">
+                      <h1 class="header-title">Как добавить CallDispatcher в исключения Clean Master</h1>
+                      <p class="header-date">By <a href="/author/igor-a.html">Igor A.</a>, Вт 26 Январь 2016, modified Ср 27 Январь 2016, in category <a href="/category/faq.html">Faq</a></p>
+                      <div class="header-underline"></div>
+                      <div class="clearfix"></div>
+                      <p class="pull-right header-tags">
+                          <span class="glyphicon glyphicon-tags mr5" aria-hidden="true"></span>
+                      </p>
+                  </div>
+              </div>
+        </div>
+    </div>
+    <!-- /Header -->
+            <!-- /Header -->
+
+        </div>
+        <!-- /Header -->
+
+
+        <!-- Content -->
+    <div class="container content">
+        <h2>Проблема</h2>
+<p>При использовании приложения <strong>CallDispatcher</strong> иногда возникает проблема с так называемым &laquo;слётом баз&raquo;,
+когда приложение показывает только страну и не показывает регион и оператора и приходится снова и снова переустанавливать базы.</p>
+<p>Это может происходить из-за того, что на вашем устройстве установлено одно из приложений, которые называют  <em>клинерами</em>, <em>таск-киллерами</em> или <em>оптимизаторами</em>.
+Разработчики подобных приложений позиционируют их как нужные и полезные инструменты, помогающие пользователю оптимизировать работу устройств под управлением <em>ОС Android</em>.
+<p>Тем не менее, из-за несовершенства алгоритмов подобных приложений, многие из них считают папку с базами <strong>CallDispatcher</strong> мусором (кэшем, временными файлами) и могут удалять её при &laquo;очистке&raquo; или &laquo;оптимизации&raquo; памяти.</p>
+<p>
+Такая проблема возникает, например, если на устройстве установлено приложение <strong>Clean Master</strong> от <em>Cheetah Mobile</em> или аналогичное от того же разработчика.
+<strong>Clean Master</strong> удаляет папку с базами <strong>CallDispatcher</strong> и может выгружать из памяти процессы приложения <strong>CallDispatcher</strong>, необходимые для её работы (отображения окон с информацией о вызовах).
+</p>
+<p>
+Чтобы избежать подобных проблем, проще всего никогда не использовать <em>клинеры</em>, <em>таск-киллеры</em> и прочие <em>&laquo;оптимизаторы&raquo;</em>, потому что они скорее вредны, чем полезны.
+Но, если вы всё же по каким-то причинам не можете отказаться от их использования, то существует простое решение этой проблемы, показанное далее на примере настройки приложения <strong>Clean Master</strong>.</p></p>
+<h2>Решение</h2>
+<p>Запускаем <strong>Clean Master</strong>.</p>
+<p><img alt="Clean Master - Главный экран" src="/images/cleanmaster_1.png" /></p>
+<p>Нажимаем пункт меню <strong>&laquo;Мусор&raquo;</strong>.
+<img alt="Clean Master - экран Мусор" src="/images/cleanmaster_2.png" /></p>
+<p>Находим группу <strong>&laquo;Ненужный кэш&raquo;</strong>.
+Если группа не раскрыта, то раскрываем группу нажатием.
+Пролистываем список группы, находим строку с приложением <strong>Call Dispatcher</strong>.
+<img alt="Clean Master - список Ненужный кэш" src="/images/cleanmaster_3.png" /></p>
+<p>Нажимаем на строке и удерживаем.
+<img alt="Clean Master - нажатие на список Ненужный кэш" src="/images/cleanmaster_6.png" /></p>
+<p>В появившемся окне нажимаем кнопку <strong>[Добавить в белый список]</strong>.
+<img alt="Clean Master - окно Добавить" src="/images/cleanmaster_7.png" /></p>
+<p>Пролистываем список до группы <strong>&laquo;Оптимизация памяти&raquo;</strong>.
+Раскрываем группу нажатием.
+Пролистываем список группы, находим строку с приложением <strong>Call Dispatcher</strong>.
+В этом списке работают два варианта: <em>а) нажимаем на строке и удерживаем</em> или <em>б) просто нажимаем на строке</em>.
+<img alt="Clean Master - список Оптимизация памяти" src="/images/cleanmaster_8.png" /></p>
+<p>В появившемся окне нажимаем <strong>[Добавить в белый список]</strong>.
+<img alt="[Clean Master - нажатие с удержанием на список Оптимизация памяти]" src="/images/cleanmaster_9.png" />
+<img alt="Clean Master - простое нажатие на список Оптимизация памяти" src="/images/cleanmaster_10.png" /></p>
+<h2>Проверка</h2>
+<p>Возвращаемся в главное окно нажатием аппаратной кнопки телефона <strong>[Назад]</strong> или пункта <strong>&lt; Мусор</strong>.
+<img alt="Clean Master - Главный экран" src="/images/cleanmaster_1.png" /></p>
+<p>Переходим на вкладку <strong>[Я]</strong>.</p>
+<p>В появившемся списке нажимаем пункт  <strong>&laquo;Настройки&raquo;</strong>.
+<img alt="Clean Master - экран Я" src="/images/cleanmaster_11.png" /></p>
+<p>Пролистываем до группы <strong>&laquo;Белый список&raquo;</strong>.
+<img alt="Clean Master - экран Настройки" src="/images/cleanmaster_12.png" /></p>
+<p>Нажимаем пункт  <strong>&laquo;Мусор&raquo;</strong>.</p>
+<p>Убеждаемся, что в списке присутствует <em>кэш</em> приложения <strong>Call Dispatcher</strong>.
+<img alt="Clean Master - экран Настройки / Мусор" src="/images/cleanmaster_13.png" /></p>
+<p>Нажимаем пункт  <strong>&laquo;Задачи&raquo;</strong>.</p>
+<p>Убеждаемся, что в списке присутствует <em>задача</em> приложения <strong>Call Dispatcher</strong>.
+<img alt="Clean Master - экран Настройки / Задачи" src="/images/cleanmaster_14.png" /></p>
+<h2>Результат</h2>
+<p>Теперь задачи и данные приложения <strong>Call Dispatcher</strong> добавлены в белый список <strong>Clean Master</strong>.</p>
+<h2>Полезный совет</h2>
+<p>Если вы пользуетесь приложением <strong>Clean Master</strong> или аналогичными, рекомендую прочитать статью &laquo;<a href="http://www.helpix.ru/appinion/201504/1178-clean_master-ochistite_sistemu_ot_clean_mastera.html">Clean Master - Очистите систему... от Clean Master'а...</a>&raquo;.</p>
+
+
+        
+    </div>
+        <!-- /Content --> 
+
+        <!-- Footer -->
+        <div class="footer gradient-2">
+            <div class="container footer-container ">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title">Sitemap</div>
+                        <ul class="list-unstyled">
+                            <li><a href="/archives.html">Archives</a></li>
+                            <li><a href="/tags.html">Tags</a></li>
+                            <li><a href="/authors.html">Authors</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title">Social</div>
+                        <ul class="list-unstyled">
+                            <li><a href="#" target="_blank">Github</a></li>
+                            <li><a href="#" target="_blank">Linkedin</a></li>
+                            <li><a href="#" target="_blank">Facebook</a></li>
+                            <li><a href="#" target="_blank">Twitter</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title">Links</div>
+                        <ul class="list-unstyled">
+                            <li><a href="http://getpelican.com/" target="_blank">Pelican</a></li>
+                            <li><a href="http://python.org/" target="_blank">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/" target="_blank">Jinja2</a></li>
+                        </ul>
+                    </div> 
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                        <p class="pull-right text-right">
+                            <small><em>Proudly powered by <a href="http://docs.getpelican.com/" target="_blank">pelican</a></em></small><br/>
+                            <small><em>Theme and code by <a href="https://github.com/molivier" target="_blank">molivier</a></em></small><br/>
+                            <small>&copy; blogname 2015</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Footer -->
+    </body>
+</html>
