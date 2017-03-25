@@ -4,11 +4,11 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Начиная с Android версии 5 в систему были добавлены настройки разрешений для приложений. Разрешения, необходимые для работы приложения CallDispatcher: Чтение SD карты Запись на SD карту Чтение ...">
+        <meta name="description" content="Начиная с Android 5.0 (Lollipop) в систему были добавлена возможность настраивать разрешения для приложений. Эта возможность, естественно, осталась и в более поздних версиях Android - 5.1, 6.0 ...">
         <meta name="keywords" content="CallDispatcher">
         <link rel="icon" href="/favicon.ico">
 
-        <title>Не отображается окно с информацией на Android 5, 6, 7 - a4vi2r</title>
+        <title>Настройка разрешений для работы приложения на Android 5, 6, 7 - a4vi2r</title>
 
         <!-- Stylesheets -->
         <link href="/theme/css/bootstrap.min.css" rel="stylesheet">
@@ -58,7 +58,7 @@
         <div class="row">
               <div class="col-lg-12">
                   <div class="header-content">
-                      <h1 class="header-title">Не отображается окно с информацией на Android 5, 6, 7</h1>
+                      <h1 class="header-title">Настройка разрешений для работы приложения на Android 5, 6, 7</h1>
                       <p class="header-date">автор <a href="/author/igor-a.html">Igor A.</a>, Сб 25 Март 2017, в категории <a href="/category/faq.html">Faq</a></p>
                       <div class="header-underline"></div>
                       <div class="clearfix"></div>
@@ -78,19 +78,20 @@
 
         <!-- Content -->
     <div class="container content">
-        <p>Начиная с <strong>Android версии 5</strong> в систему были добавлены настройки разрешений для приложений.</p>
-<p>Разрешения, необходимые для работы приложения CallDispatcher:</p>
+        <p>Начиная с <strong>Android 5.0</strong> <em>(Lollipop)</em> в систему были добавлена возможность настраивать разрешения для приложений. Эта возможность, естественно, осталась и в более поздних версиях <strong>Android</strong> - <strong>5.1</strong>, <strong>6.0</strong> <em>(Marshmallow)</em>, <strong>7.0</strong> и <strong>7.1</strong> <em>(Nougat)</em>.</p>
+<p>Для полноценной работы приложению <strong>CallDispatcher</strong> необходимо предоставить разрешения для операций:</p>
 <ul>
 <li>Чтение SD карты</li>
 <li>Запись на SD карту</li>
 <li>Чтение журнала вызовов</li>
-<li>Состояние сетей</li>
+<li>Определение состояния сетей</li>
 <li>Доступ в Интернет</li>
-<li>Системные уведомления</li>
+<li>Отображение системных уведомлений</li>
 <li>Чтение данных контактов</li>
 <li>Чтение состояния телефона</li>
 </ul>
-<p>Поэтому для полноценной работы CallDispatcher в Андроид 5/6/7 нужно:</p>
+<h2>Настройка разрешений</h2>
+<p>Для настройки вышеописанных разрешений нужно проделать следующее:</p>
 <ol>
 <li>
 <p>Зайти в <strong>Settings</strong> (Настройки) / <strong>Apps</strong> (Приложения) и выбрать из списка приложение <strong>CallDispatcher</strong>
@@ -98,26 +99,28 @@
 </li>
 <li>
 <p>В открывшемся окне <strong>О приложении</strong> нажать <strong>Разрешения</strong>
-<img alt="Настройки / Приложения / CallDispatcher" src="/images/android_567_settings_apps_calldispatcher.png" /></p>
+<img alt="Настройки / Приложения / CallDispatcher / О приложении" src="/images/android_567_settings_apps_calldispatcher.png" /></p>
 </li>
 <li>
 <p>Разрешить доступ к следующим элементам: <strong>Контакты</strong>, <strong>Память</strong>, <strong>Телефон</strong> (поставить галочки / включить тумблеры)
-<img alt="Настройки / Приложения / CallDispatcher" src="/images/android_567_settings_apps_calldispatcher_permissions.png" /></p>
+<img alt="Настройки / Приложения / CallDispatcher / О приложении / Разрешения" src="/images/android_567_settings_apps_calldispatcher_permissions.png" /></p>
 </li>
 <li>
 <p>Ещё раз зайти в <strong>Settings</strong> (Настройки) / <strong>Apps</strong> (Приложения) и нажать шестерёнку в правом верхнем углу
 <img alt="Настройки / Приложения" src="/images/android_567_settings_apps.png" /></p>
 </li>
 <li>
-<p>В открывшемся окне <strong>Configure Apps</strong> (Настройки приложений) из списка выбрать <strong>Draw over other apps</strong> (Отображение поверх других приложений / Наложение поверх других окон)
-<img alt="Настройки / Приложения" src="/images/android_567_settings_apps_configure_apps.png" /></p>
+<p>В открывшемся окне <strong>Configure Apps</strong> (Настройки приложений) из списка выбрать <strong>Draw over other apps</strong> (Отображение поверх всех приложений / Наложение поверх других окон)
+<img alt="Настройки / Приложения / Настройки приложений" src="/images/android_567_settings_apps_configure_apps.png" /></p>
 </li>
 <li>
-<p>Из списка приложений выбрать приложение <strong>CallDispatcher</strong> и в появившемся окне поставить галочку (включить тумблер)
-<img alt="Настройки / Приложения" src="/images/android_567_settings_apps_calldispatcher_draw_over_other_apps.png" /></p>
+<p>Из списка приложений выбрать приложение <strong>CallDispatcher</strong> и в появившемся окне поставить галочку (включить тумблер) у настройки <strong>Draw over other apps</strong> (Отображение поверх всех приложений / Разрешить наложение поверх других окон)
+<img alt="Настройки / Приложения / Настройки приложений / Отображение поверх всех приложений" src="/images/android_567_settings_apps_calldispatcher_draw_over_other_apps.png" /></p>
 </li>
 </ol>
-<p>Кроме этого, если производитель телефона добавил ещё какие-то свои приложения "безопасности" в стандартный Андроид, то нужно включить необходимые разрешения в этих приложениях.</p>
+<h2>Дополнительно</h2>
+<p>В оболочке <strong>MIUI</strong> есть свои настройки безопасности, которые могут ограничивать полноценную работу приложения <strong>CallDispatcher</strong>.</p>
+<p>Кроме этого, если производитель телефона добавил в стандартный <strong>Android</strong> ещё какие-то свои дополнения, ограничивающие доступ к отдельным элементам системы, то нужно включить необходимые разрешения в настройках этих дополнений. Это характерно для телефонов таких производителей, как <strong>HTC</strong>, <strong>Huawei</strong>, <strong>Lenovo</strong> и <strong>Samsung</strong>. </p>
 
 
         
