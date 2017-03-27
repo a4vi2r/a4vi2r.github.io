@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Проблема Не работает всплывающее сообщение на смартфоне модели Huawei Ascend P6S/P7 (Android 4.4.2). На других моделях устройств Huawei возможно наличие аналогичной проблемы. Вместо показа ...">
-        <meta name="keywords" content="">
+        <meta name="description" content="Проблема Не работает всплывающее сообщение на смартфоне модели Huawei Ascend P6S/P7 (Android 4.4.2). На других моделях устройств Huawei возможно наличие аналогичной проблемы. Вместо отображения ...">
+        <meta name="keywords" content="CallDispatcher">
         <link rel="icon" href="/favicon.ico">
 
         <title>Ошибка "Call Dispatcher не может открывать буферную зону / Blocked Call Dispatcher from showing dropzone" - a4vi2r</title>
@@ -43,9 +43,9 @@
                     </div>
                     <div class="nav pull-right">
                                 <a href="/">About</a>
-                                <a href="/faq/">FAQ</a>
-                                <a href="/todo.html">ToDo</a>
-                                <a href="/changelog.html">changelog</a>
+                            <a  href="/pages/calldispatcher/index.html">Call Dispatcher</a>
+                            <a  href="/pages/mnphelper/index.html">MNP Helper</a>
+                            <a  href="/pages/calldispatcher/index_en-en.html">Call Dispatcher EN</a>
                     </div>
                 </div>
             </div>
@@ -58,12 +58,12 @@
               <div class="col-lg-12">
                   <div class="header-content">
                       <h1 class="header-title">Ошибка "Call Dispatcher не может открывать буферную зону / Blocked Call Dispatcher from showing dropzone"</h1>
-                      <p class="header-date">By <a href="/author/igor-a.html">Igor A.</a>, Вт 26 Январь 2016, modified Вт 26 Январь 2016, in category <a href="/category/faq.html">Faq</a></p>
+                      <p class="header-date">автор <a href="/author/igor-a.html">Igor A.</a>, Сб 25 Март 2017, в категории <a href="/category/faq.html">Faq</a></p>
                       <div class="header-underline"></div>
                       <div class="clearfix"></div>
                       <p class="pull-right header-tags">
                           <span class="glyphicon glyphicon-tags mr5" aria-hidden="true"></span>
-                      </p>
+<a href="/tag/calldispatcher.html">CallDispatcher</a>                      </p>
                   </div>
               </div>
         </div>
@@ -78,9 +78,9 @@
         <!-- Content -->
     <div class="container content">
         <h2>Проблема</h2>
-<p>Не работает всплывающее сообщение на смартфоне модели <strong>Huawei Ascend P6S/P7</strong> (<em>Android</em> 4.4.2).
-На других моделях устройств <strong>Huawei</strong> возможно наличие аналогичной проблемы.</p>
-<p>Вместо показа всплывающего сообщения система выдает ошибку:</p>
+<p>Не работает всплывающее сообщение на смартфоне модели <strong>Huawei Ascend P6S/P7</strong> (<em>Android</em> 4.4.2).</p>
+<p>На других моделях устройств <strong>Huawei</strong> возможно наличие аналогичной проблемы.</p>
+<p>Вместо отображения всплывающего сообщения система выдает ошибку:</p>
 <blockquote>
 <p>Call Dispatcher не может открывать буферную зону</p>
 </blockquote>
@@ -89,16 +89,29 @@
 <p>Blocked Call Dispatcher from showing dropzone</p>
 </blockquote>
 <h2>Решение</h2>
-<ul>
-<li>Запускаем <strong>PhoneManager</strong> (Диспетчер телефона)</li>
-<li>Нажимаем в правом верхнем углу кнопку <strong>Settings</strong> (Инструменты)</li>
-<li>Переходим в <strong>Dropzone Management</strong> (Управление буферной зоной)</li>
-<li>Ставим галочку напротив приложения <strong>CallDispatcher</strong>.</li>
-</ul>
-<p>То же самое желательно проделать ещё и в <strong>PhoneManager &rarr; Settings &rarr; Notification Manager</strong> и в <strong>PhoneManager &rarr; Settings &rarr; Startup Manager</strong>.</p>
-<p><img alt="Alt Text" src="/images/huawei_dropzone_5.jpg" />
-<img alt="Alt Text" src="/images/huawei_dropzone_4.jpg" />
+<ol>
+<li>
+<p>Запускаем <strong>PhoneManager</strong> (Диспетчер телефона)
+<img alt="Alt Text" src="/images/huawei_dropzone_5.jpg" /></p>
+</li>
+<li>
+<p>Нажимаем в правом верхнем углу кнопку <strong>Settings</strong> (Инструменты)
+<img alt="Alt Text" src="/images/huawei_dropzone_4.jpg" /></p>
+</li>
+<li>
+<p>Переходим в <strong>Dropzone Management</strong> (Управление буферной зоной)
 <img alt="Alt Text" src="/images/huawei_dropzone_7.jpg" /></p>
+</li>
+<li>
+<p>Ставим галочку напротив приложения <strong>CallDispatcher</strong></p>
+</li>
+</ol>
+<h2>Дополнительно</h2>
+<p>Аналогичные действия желательно проделать ещё и в следующих местах:</p>
+<ul>
+<li><strong>PhoneManager / Settings / Notification Manager</strong></li>
+<li><strong>PhoneManager / Settings / Startup Manager</strong></li>
+</ul>
 
 
         
@@ -120,25 +133,21 @@
                     <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
                         <div class="footer-title">Social</div>
                         <ul class="list-unstyled">
-                            <li><a href="#" target="_blank">Github</a></li>
-                            <li><a href="#" target="_blank">Linkedin</a></li>
-                            <li><a href="#" target="_blank">Facebook</a></li>
-                            <li><a href="#" target="_blank">Twitter</a></li>
+                            <li><a href="https://github.com/a4vi2r" target="_blank">Github</a></li>
+                            <li><a href="https://twitter.com/a4vi2r" target="_blank">Twitter</a></li>
                         </ul>
                     </div>
                     <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
                         <div class="footer-title">Links</div>
                         <ul class="list-unstyled">
-                            <li><a href="http://getpelican.com/" target="_blank">Pelican</a></li>
-                            <li><a href="http://python.org/" target="_blank">Python.org</a></li>
-                            <li><a href="http://jinja.pocoo.org/" target="_blank">Jinja2</a></li>
+                            <li><a href="http://4pda.ru/" target="_blank">4PDA</a></li>
                         </ul>
                     </div> 
                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                         <p class="pull-right text-right">
                             <small><em>Proudly powered by <a href="http://docs.getpelican.com/" target="_blank">pelican</a></em></small><br/>
                             <small><em>Theme and code by <a href="https://github.com/molivier" target="_blank">molivier</a></em></small><br/>
-                            <small>&copy; blogname 2015</small>
+                            <small>&copy; a4vi2r 2016-2017</small>
                         </p>
                     </div>
                 </div>
